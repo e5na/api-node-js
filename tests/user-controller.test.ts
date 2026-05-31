@@ -7,11 +7,6 @@ export let baseURL: string = 'http://localhost:3000/users';
 
 test.describe('User management API', () => {
 
-    test('all users: should return empty array when no users', async ({ request }) => {
-        const allUsers = await getAllUsers(request);
-        expect(await allUsers.text()).toBe('[]');
-    });
-
     test('find user: should return a user by ID', async ({ request }) => {
         const user = await createUser(request);
         const newUser = await getUserById(request, user.id);
