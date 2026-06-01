@@ -1,2 +1,11 @@
 ### GET all users
 GET http://localhost:3000/users
+
+### POST create a user
+POST http://localhost:3000/users
+
+### GET user by id
+GET http://localhost:3000/users/81
+
+### DELETE user by id
+DELETE http://localhost:3000/users/81
